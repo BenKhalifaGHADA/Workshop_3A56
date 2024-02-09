@@ -1,0 +1,19 @@
+{#{{form(formS)}}#}
+
+{{ form_start(formS,{'attr': {'novalidate': 'novalidate'}} ) }}
+
+
+    {{form_label(formS.Email)}} {#<label></label>#}
+{{form_widget(formS.Email)}} {#<input>#}
+{{form_errors(formS.Email,{'attr':{'class':"test"}})}}
+
+{#{{form_rows(formS.Email)}}#}
+
+    {{form_label(formS.NSC,'Numero d inscription')}} {#<label></label>#}
+    {{form_widget(formS.NSC)}} {#<input>#}
+{{form_errors(formS.NSC)}}
+
+
+
+
+{{form_end(formS)}}{#</form>#}
